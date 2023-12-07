@@ -8,6 +8,8 @@ Here, you'll discover setup files, docker-compose configurations, and additional
 
 ## Getting Started
 
+![image](https://github.com/edsonma/postgres-debezium-rabbimq-kibaetl/assets/711579/a6f81a76-49c0-48ff-86c5-273d9331d239)
+
 ### Technologies
 - What technologies will you find here?
   - postgresql relational database
