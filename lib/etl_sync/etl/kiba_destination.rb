@@ -1,0 +1,3 @@
+class KibaDestination
+  
+end
