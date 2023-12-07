@@ -8,7 +8,13 @@ Here, you'll discover setup files, docker-compose configurations, and additional
 
 ## Getting Started
 
+To engage with the most recent flow diagram, I utilized the draft image bellow as the foundation for asking questions.
+<img width="829" alt="Screenshot 2023-12-06 at 22 55 49" src="https://github.com/edsonma/postgres-debezium-rabbimq-kibaetl/assets/711579/79843c18-a466-42da-8c54-e27acb516824">
+
+In the quest for tools, technologies, and system evolution, I have reached this image:
 ![cdc drawio](https://github.com/edsonma/postgres-debezium-rabbimq-kibaetl/assets/711579/93d76ad4-e836-4b1f-a19b-d81bd65241af)
+
+... and I am consistently a work in progress, envisioning potentials we can evolve to on a large scale.
 
 ### Technologies
 - What technologies will you find here?
