@@ -54,4 +54,7 @@ docker compose up -d
 Embrace collaboration with coding hands.
 "Contribute your skills, create impact, and collaboratively shape the future of technology!"
 
+### References
+  - https://shopify.engineering/capturing-every-change-shopify-sharded-monolith
+    
 Prosit!
