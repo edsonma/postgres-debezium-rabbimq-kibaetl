@@ -10,7 +10,7 @@ Here, you'll discover setup files, docker-compose configurations, and additional
 
 ### Technologies
 - What technologies will you find here?
-  - postgresl relational database
+  - postgresql relational database
   - rabbitmq message broker
   - debezium CDC platform
   - KibaETL data-processing ruby tool
