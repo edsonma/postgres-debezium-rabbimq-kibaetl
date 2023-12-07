@@ -8,7 +8,7 @@ Here, you'll discover setup files, docker-compose configurations, and additional
 
 ## Getting Started
 
-![image](https://github.com/edsonma/postgres-debezium-rabbimq-kibaetl/assets/711579/a6f81a76-49c0-48ff-86c5-273d9331d239)
+![cdc drawio](https://github.com/edsonma/postgres-debezium-rabbimq-kibaetl/assets/711579/93d76ad4-e836-4b1f-a19b-d81bd65241af)
 
 ### Technologies
 - What technologies will you find here?
