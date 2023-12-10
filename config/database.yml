@@ -1,37 +1,37 @@
-default_notion: &default_notion
+default_source: &default_source
   adapter: postgresql
   encoding: unicode
   pool: 5
-  host: <%= ENV.fetch('PG_NOTION_HOST') { 'localhost' } %>
-  port: <%= ENV.fetch('PG_NOTION_PORT') { 5432 } %>
-  username: <%= ENV.fetch('PG_NOTION_USER') { 'debezium' } %>
-  password: <%= ENV.fetch('PG_NOTION_PASS') { 'debezium123' } %>
+  host: <%= ENV.fetch('PG_SOURCE_HOST') { 'localhost' } %>
+  port: <%= ENV.fetch('PG_SOURCE_PORT') { 5432 } %>
+  username: <%= ENV.fetch('PG_SOURCE_USER') { 'user' } %>
+  password: <%= ENV.fetch('PG_SOURCE_PASS') { 'user123' } %>
 
-notion_development:
-  <<: *default_notion  
-  database: <%= ENV.fetch('PG_NOTION_DB', 'notion_dev') %>
+source_development:
+  <<: *default_source
+  database: <%= ENV.fetch('PG_SOURCE_DB', 'source_dev') %>
 
-notion_test:
-  <<: *default_notion
-  database: 'notion_test'
+source_test:
+  <<: *default_source
+  database: 'source_test'
 
-notion_production:
-  <<: *default_notion
-  database: <%= ENV.fetch('PG_NOTION_DB', '') %>
+source_production:
+  <<: *default_source
+  database: <%= ENV.fetch('PG_SOURCE_DB', '') %>
 
 default_destination: &default_destination
   adapter: postgis
   encoding: unicode
   pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 10 }.to_i + 1 %>
-  host: <%= ENV.fetch('PG_MB_HOST') { 'localhost' } %>
-  port: <%= ENV.fetch('PG_MB_PORT') { 5432 } %>
-  username: <%= ENV.fetch('PG_MB_USER') { 'destination' } %>
-  password: <%= ENV.fetch('PG_MB_PASS') { 'destination123 } %>
+  host: <%= ENV.fetch('PG_DST_HOST') { 'localhost' } %>
+  port: <%= ENV.fetch('PG_DST_PORT') { 5432 } %>
+  username: <%= ENV.fetch('PG_DST_USER') { 'destination' } %>
+  password: <%= ENV.fetch('PG_DST_PASS') { 'password1' } %>
 
 mb_development:
   <<: *default_destination
   adapter: postgis
-  database: <%= ENV.fetch('PG_MB_DB') { 'destination_development' } %>
+  database: <%= ENV.fetch('PG_DST_DB') { 'destination_development' } %>
 
 mb_test:
   <<: *default_destination
