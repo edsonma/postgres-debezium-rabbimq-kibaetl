@@ -57,8 +57,9 @@ Embrace collaboration with coding hands.
 ### References
   - https://shopify.engineering/capturing-every-change-shopify-sharded-monolith
 
-    
-# Prosit!
+ --- 
+ 
+## Prosit!
 
 <img width="535" alt="Screenshot 2023-12-10 at 20 03 16" src="https://github.com/edsonma/postgres-debezium-rabbitmq-kibaetl/assets/711579/a2329727-c308-4707-ab83-49f544553e9b">
 
