@@ -6,6 +6,7 @@ gem 'rake'
 
 gem 'activerecord'
 gem 'pg'
+gem 'bunny'
 
 group :development, :test do
   # rspec testing
@@ -23,6 +24,3 @@ group :development, :test do
   # other code quality scanner
   gem 'reek'
 end
-
-
-

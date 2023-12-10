@@ -1,22 +1,22 @@
-default_source: default_source
+default_source: &default_source
   adapter: postgresql
   encoding: unicode
   pool: 5
   host: <%= ENV.fetch('PG_SOURCE_HOST') { 'localhost' } %>
   port: <%= ENV.fetch('PG_SOURCE_PORT') { 5432 } %>
-  username: <%= ENV.fetch('PG_SOURCE_USER') { 'debezium' } %>
-  password: <%= ENV.fetch('PG_SOURCE_PASS') { 'debezium123' } %>
+  username: <%= ENV.fetch('PG_SOURCE_USER') { 'user' } %>
+  password: <%= ENV.fetch('PG_SOURCE_PASS') { 'user123' } %>
 
 source_development:
-  <<: default_source  
+  <<: *default_source
   database: <%= ENV.fetch('PG_SOURCE_DB', 'source_dev') %>
 
 source_test:
-  <<: default_source
+  <<: *default_source
   database: 'source_test'
 
 source_production:
-  <<: default_source
+  <<: *default_source
   database: <%= ENV.fetch('PG_SOURCE_DB', '') %>
 
 default_destination: &default_destination
@@ -26,18 +26,18 @@ default_destination: &default_destination
   host: <%= ENV.fetch('PG_DST_HOST') { 'localhost' } %>
   port: <%= ENV.fetch('PG_DST_PORT') { 5432 } %>
   username: <%= ENV.fetch('PG_DST_USER') { 'destination' } %>
-  password: <%= ENV.fetch('PG_DST_PASS') { 'destination123 } %>
+  password: <%= ENV.fetch('PG_DST_PASS') { 'password1' } %>
 
-destination_development:
+mb_development:
   <<: *default_destination
   adapter: postgis
   database: <%= ENV.fetch('PG_DST_DB') { 'destination_development' } %>
 
-destination_test:
+mb_test:
   <<: *default_destination
   database: 'destination_test'
 
-destination_staging:
+mb_staging:
   <<: *default_destination
   host: <%= ENV.fetch('X_PG_HOST') { '' } %>
   port: <%= ENV.fetch('X_PG_PORT') { 5432 } %>
@@ -45,7 +45,7 @@ destination_staging:
   username: <%= ENV.fetch('X_PG_USER') { '' } %>
   password: <%= ENV.fetch('X_PG_PASS') { '' } %>
 
-destination_production:
+mb_production:
   <<: *default_destination
   host: <%= ENV.fetch('X_PG_HOST') { '' } %>
   port: <%= ENV.fetch('X_PG_PORT') { 5432 } %>
