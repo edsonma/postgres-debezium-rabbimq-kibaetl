@@ -40,7 +40,7 @@ In the quest for tools, technologies, and system evolution, I have reached my id
 
 - Walk to cloned directory:
 ```fish
-  cd postgres-debezium-rabbimq-kibaetl 
+  cd postgres-debezium-rabbitmq-kibaetl 
 ```
 
 - LGTM (use docker-compose)
