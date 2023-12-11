@@ -61,6 +61,12 @@ Embrace collaboration with coding hands.
  
 ## Prosit!
 
-<img width="535" alt="Screenshot 2023-12-10 at 20 03 16" src="https://github.com/edsonma/postgres-debezium-rabbitmq-kibaetl/assets/711579/a2329727-c308-4707-ab83-49f544553e9b">
+```
+.~~~~.
+i====i_
+|cccc|_)
+|cccc|
+`-==-'
+```
 
 
